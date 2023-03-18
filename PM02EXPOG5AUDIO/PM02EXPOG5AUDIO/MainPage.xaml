@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PM02EXPOG5AUDIO"
+             x:Class="PM02EXPOG5AUDIO.MainPage" Padding="20,80,20,0">
+
+    <StackLayout  Spacing="15">
+        <StackLayout Orientation="Horizontal">
+            <Switch x:Name="TimeoutSwitch" IsToggled="True" />
+            <Label Text="¿Parar después del silencio?" />
+        </StackLayout>
+        <Button x:Name="GravarButton" Text="Grabar Audio" HorizontalOptions="FillAndExpand"
+                Clicked="GravarButton_Clicked" />
+        <Button x:Name="ReproduzirButton" Text="Reproducir Audio"  HorizontalOptions="FillAndExpand" 
+                Clicked="ReproduzirButton_Clicked"  IsEnabled="False" />
+    </StackLayout>
+
+</ContentPage>
